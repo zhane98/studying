@@ -42,7 +42,7 @@ class Chimp(Animal):
         self.breed = breed
 
     def smash_rocks(self):      #defining a new function
-        print(self.first + ", go and smash the" + colour_of_rocks_to_smash + "rocks")
+        print(self.first + ", go and smash the " + colour_of_rocks_to_smash + " rocks")
 
 # CHILD of Chimp PARENT class.
 leader = Chimp("Black", "Caesar", "Emperor", 40, "Silverback")
