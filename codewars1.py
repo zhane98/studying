@@ -22,7 +22,7 @@ def arr(n = 0): # function with default value
         
     return(new_list) 
 
-print(arr())
+print(arr(10))
 
 
 # for n in arr(n):
