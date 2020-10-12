@@ -25,16 +25,18 @@ for postings in job_elems:
     title = postings.find('h2', class_='title')
     company = postings.find('div', class_='company')
     location = postings.find('div', class_='location')
-    link = postings.find('a')['href']
+    # link = postings.find('a')['href']
 
-    
-
-    if None in (title, company, location, link):
+    if None in (title, company, location):
         continue
  
+    link = postings.find('a').get('href')
+    
+    if link is None:
+        continue
 
     print(title.text.strip())
-    # print(company.text.strip())
-    # print(location.text.strip())
+    print(company.text.strip())
+    print(location.text.strip())
     print(f"Link to job: {link} \n")
     print()
