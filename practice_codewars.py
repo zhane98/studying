@@ -6,7 +6,6 @@
 
 def arr(n = 0):
 
-    return list(range(n)) 
+   
 
-print(arr(10))
-
+print(arr(7))    
