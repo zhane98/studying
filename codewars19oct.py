@@ -27,14 +27,32 @@ def flip(direction, sequence):
 # you will have a list with 5, 6 - use the join method to combine into 1 number. 
 
 def get_number_from_string(string):
-
     
-    new_list = list(string)
-    return new_list
+    # new_list = list(string)
+    # range_of_integers = "0123456789"
+    # empty_list = []
 
 
+    # for character in new_list:                       # loop, then if, then append
+    #     if character in range_of_integers:
+    #         empty_list.append(character)
+    
+    # result = ''.join(empty_list)
+    # return int(result)
 
+    return int(''.join(character for character in string if character.isdigit()))
+               
 
+    # no_integers = [x for x in mylist if not isinstance(x, int)]
+    # no_integers = character in string if not isinstance(character, int)
+
+    # for characters in new_list:
+    #     new_list.pop(int)
+    
+
+# remove items specifed to int - not equals int, then remove.
+
+# ''.join(x)
 
 print(get_number_from_string("$100 000 000")) #100000000))
 print(get_number_from_string("hell5o wor6ld")) #, 56))
